@@ -1,0 +1,13 @@
+.navbar {
+    background-image: linear-gradient(to right, rgb(95, 7, 7), rgb(168, 24, 24), rgb(194, 75, 54));
+}
+
+.navbar-logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+  }.navbar-logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
