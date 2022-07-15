@@ -1,5 +1,5 @@
 .navbar {
-  background-image: linear-gradient(to right, rgb(58, 12, 12), rgb(172, 23, 23), rgb(121, 55, 43));
+  background-image: linear-gradient(to right, rgb(128, 71, 69), rgb(231, 104, 99), rgb(43, 46, 43));
     color: rgb(0, 0, 0);
     z-index: 11;
     -webkit-backdrop-filter: blur(4px);
@@ -7,7 +7,7 @@
   opacity: 1 ;
 }
 body {
-  background-image: linear-gradient(to right, rgb(58, 12, 12), rgb(172, 23, 23), rgb(121, 55, 43));
+  background-image: linear-gradient(to right, rgb(128, 71, 69), rgb(231, 104, 99), rgb(43, 46, 43));
 
 }
 .navbar-logo{
