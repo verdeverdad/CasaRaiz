@@ -76,17 +76,17 @@ footer a {
 }
 
 .card {
-  background-image: linear-gradient(to bottom right, rgb(48, 66, 60),  rgb(198, 98, 103),rgb(198, 98, 103),rgb(198, 98, 103),rgb(198, 98, 103));
 
   opacity: 80%;
   flex: 1 200px;
   margin-top: 30px;
   margin-right: 30px;
   margin-left: 30px;
-  border: 2px solid #070707;
-  border-radius: 10px;
-  box-shadow: 0px 0px 2px #ebf0f5;
-  
+  border-radius: 1px;
+  box-shadow: 4px 4px 2px #da3f3f;
+  border: 0.5cm;
+  border-style: solid;
+  border-color: red green blue yellow;
 }
 
 #in {
@@ -140,3 +140,4 @@ body {
   text-align: center;
   padding: 0;
 }
+
