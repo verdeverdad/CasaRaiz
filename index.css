@@ -1,5 +1,5 @@
 .navbar {
-  background-image: linear-gradient(to bottom right, rgb(48, 66, 60), rgb(198, 98, 103),rgb(198, 98, 103));
+  background-image: linear-gradient(to bottom right, rgb(48, 66, 60), rgb(198, 98, 103), rgb(198, 98, 103));
   z-index: 11;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
@@ -21,7 +21,7 @@
 
 footer {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-image: linear-gradient(to bottom right, rgb(48, 66, 60), rgb(198, 98, 103),rgb(198, 98, 103));
+  background-image: linear-gradient(to bottom right, rgb(48, 66, 60), rgb(198, 98, 103), rgb(198, 98, 103));
 }
 
 footer p {
@@ -43,7 +43,7 @@ footer a {
   display: block;
   width: 55%;
   height: auto;
-  
+
 }
 
 #cr {
@@ -75,6 +75,26 @@ footer a {
   font-size: 0.6cm;
 }
 
+
+.card-talleres p {
+  color: rgb(100, 42, 0);
+  font-size: 23px;
+
+
+}
+
+.card-talleres h4 {
+  color: #a71d1d;
+  font-size: 27px;
+ 
+
+}
+
+.card-talleres strong {
+  color: #630d0d;
+  font-size: 23px;
+}
+
 .card {
 
   opacity: 80%;
@@ -84,19 +104,18 @@ footer a {
   margin-left: 30px;
   border-radius: 1px;
   box-shadow: 4px 4px 2px #da3f3f;
-  border: 0.5cm;
-  border-style: solid;
-  border-color: red green blue yellow;
+
+
 }
 
 #in {
   background-image: linear-gradient(to right, rgb(198, 98, 103), rgb(198, 98, 103), rgb(48, 66, 60));
   color: rgb(8, 8, 8);
   text-shadow: 1px 1px 2px black, 0 0 25px rgb(56, 48, 48), 0 0 5px rgb(90, 89, 89);
-  
+
   font-family: "Helvetica";
   font-size: 35px;
-  
+
 }
 
 body {
@@ -140,4 +159,3 @@ body {
   text-align: center;
   padding: 0;
 }
-
