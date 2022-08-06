@@ -107,7 +107,17 @@ footer a {
 
 
 }
+#card-index{
+  color:#07101a;
+  font-size: 26px;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(56, 48, 48), 0 0 5px rgb(90, 89, 89);
+  font-family: "Helvetica";
 
+}
+.ind{
+  background-image: linear-gradient(to bottom right, rgb(48, 66, 60), rgb(198, 98, 103), rgb(198, 98, 103));
+
+}
 #in {
   background-image: linear-gradient(to right, rgb(198, 98, 103), rgb(198, 98, 103), rgb(48, 66, 60));
   color: rgb(8, 8, 8);
@@ -117,6 +127,43 @@ footer a {
   font-size: 35px;
 
 }
+.marg{
+ margin-top: 0.5cm; margin-bottom: 0.5cm; margin-right: 0.5cm; margin-left: 0.5cm;
+}
+.button-container{
+  display:inline-block;
+  position:relative;
+  }
+  
+  .button-container a{
+  position:absolute;
+  bottom:4em;
+  right:4em;
+  background-color:#d1262c;
+  border-radius:0.5em;
+  color:white;
+  text-transform:uppercase;
+  padding:1em 1.5em;
+  width: 220px;
+  font-size: 22px;
+  }
+
+  .button-redes{
+    display:inline-block;
+    position:relative;
+    }
+    
+    .button-redes a{
+    position:fixed;
+    bottom:4em;
+    right:4em;
+    background-color:#d1262c;
+    border-radius:0.5em;
+    color:white;
+    text-transform:uppercase;
+    padding:1em 1.5em;
+    width: 220px;
+    }
 
 body {
 
