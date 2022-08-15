@@ -201,7 +201,7 @@ body {
     top:230px;
     width:210px;
     z-index: 1100;
-  opacity: 75%;
+  opacity: 80%;
 }
 
 	.social ul {
@@ -220,10 +220,11 @@ body {
 	}
 
 	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
-	.social ul li .icon-twitter {background: #f000f08e;}
-	.social ul li .icon-googleplus {background: #df1919;}
+	.social ul li .icon-twitter {background-image: linear-gradient(to bottom right, rgb(187, 20, 145), rgb(230, 84, 91), rgb(247, 146, 30))}
+	.social ul li .icon-googleplus { background: red ;
+  }
 	.social ul li .icon-pinterest {background: #1dae18;}
-	.social ul li .icon-mail {background: #d83d3d;}
+	.social ul li .icon-mail {background: #30b990;}
 
 	.social ul li a:hover {
 		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
