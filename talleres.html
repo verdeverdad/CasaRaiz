@@ -16,7 +16,7 @@
     <link href="index.css" rel="stylesheet">
 
 
-
+    <link rel="stylesheet" href="css/animations.css">
     <!--<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,204 +26,62 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
 </head>
 
 <body>
-
 
 
     <nav class="navbar navbar-light  navbar-expand-md site-header sticky-top  fixed-top" id="nav" style=" background-image: linear-gradient(to right,  rgb(174, 94, 101), rgb(246, 142, 99), rgb(174, 94, 101));
     ">
         <a class="navbar-brand navbar-logo" href="index.html"><img src="img/logo.new.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="casaraiz.html" style="color:black;"><strong>Casa Raiz
-                </strong></a></li>
-            <li class="nav-item"><a class="nav-link" href="comunidadraiz.html" style="color:black ;"><strong>Comunidad
-                  Raiz</strong> </a></li>
-            <li class="nav-item"><a class="nav-link" href="talleres.html"
-                style="color:black ;"><strong>Talleres</strong></a></li>
-            <li class="nav-item-active"><a class="nav-link" href="agenda.html" style="color:black ;"><strong>Agenda
-                </strong></a></li>
-            <li class="nav-item-active"><a class="nav-link" href="tienda.html" style="color:black ;"><strong>Tienda
-                </strong></a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html" style="color:black ;"><strong>Blog</strong></a></li>
-    
-          </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="casaraiz.html" style="color:black;"><strong>Casa Raiz
+                        </strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="comunidadraiz.html"
+                        style="color:black ;"><strong>Comunidad
+                            Raiz</strong> </a></li>
+                <li class="nav-item"><a class="nav-link" href="talleres.html"
+                        style="color:black ;"><strong>Talleres</strong></a></li>
+                <li class="nav-item-active"><a class="nav-link" href="agenda.html" style="color:black ;"><strong>Agenda
+                        </strong></a></li>
+                <li class="nav-item-active"><a class="nav-link" href="tienda.html" style="color:black ;"><strong>Tienda
+                        </strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html"
+                        style="color:black ;"><strong>Blog</strong></a></li>
+
+            </ul>
         </div>
-    
-      </nav>
-      <div>
+
+    </nav>
+    <div>
         <img src="img/nav.10.png" class="nav d-block w-100" alt="...">
-      </div>
-      <br>
-
-      
-    <div class="text-center"><br>
-        <h1 id="in" class="text-center">TALLERES </h1>
     </div>
+    <br>
 
-    <div class="d-flex flex-wrap flex-row border border-5">
-
-        <div class="card d-flex flex-column justify-content-between">
-            <div class="card-talleres">
-                <img src="img/dibujos.jpg" class="card-img-top" alt="...">
-                <h4 class="">Costura</h4>
-                <p><strong>Día:</strong> Lunes</p>
-                <p><strong>Horario:</strong>10 a 19hs</p>
-                <p><strong>Tallerista:</strong>Fulana</p>
-            </div>
-            <div> <button class="btn btn-info align-items-center" style="background-color: rgb(220, 43, 20); 
-            color: white;">Inscribirme</button>
-            </div>
-        </div>
-
-        <div class="card d-flex flex-column justify-content-between">
-            <div class="card-talleres">
-                <img src="img/botella.jpg" class="card-img-top" alt="...">
-                <h4 class="">Teatro</h4>
-                <p><strong>Día: </strong> Martes y Jueves</p>
-                <p><strong>Horario: </strong>15 a 19hs</p>
-                <p><strong>Tallerista: </strong>Fulana</p>
-            </div>
-            <div> <button class="btn btn-info align-items-center" style="background-color: rgb(220, 43, 20); 
-            color: white;">Inscribirme</button>
-            </div>
-        </div>
-
-        <div class="card d-flex flex-column justify-content-between">
-            <div class="card-talleres">
-                <img src="img/piano.jpg" class="card-img-top" alt="...">
-                <h4 class="">Murga para niñxs</h4>
-                <p><strong>Día:</strong> Miércoles</p>
-                <p><strong>Horario:</strong>19hs</p>
-                <p><strong>Tallerista:</strong>Fulana y mengano</p>
-            </div>
-            <div> <button class="btn btn-info align-items-center" style="background-color: rgb(220, 43, 20); 
-            color: white;">Inscribirme</button>
-            </div>
-        </div>
-        <div class="card d-flex flex-column justify-content-between">
-            <div class="card-talleres">
-                <img src="img/baldosas.jpg" class="card-img-top" alt="...">
-                <h4 class="">Yoga</h4>
-                <p><strong>Día:</strong> Miércoles</p>
-                <p><strong>Horario:</strong>19hs</p>
-                <p><strong>Tallerista:</strong>Fulana y mengano</p>
-            </div>
-            <div> <button class="btn btn-info align-items-center" style="background-color: rgb(220, 43, 20); 
-            color: white;">Inscribirme</button>
-            </div>
-        </div>
-        <div class="card d-flex flex-column justify-content-between">
-            <div class="card-talleres">
-                <img src="img/baldosas.jpg" class="card-img-top" alt="...">
-                <h4 class="">Yoga</h4>
-                <hr>
-                <p><strong>Día:</strong> Miércoles</p>
-                <p><strong>Horario:</strong>19hs</p>
-                <p><strong>Tallerista:</strong>Fulana y mengano</p>
-            </div>
-            <div> <button class="btn btn-info align-items-center" style="background-color: rgb(220, 43, 20); 
-            color: white;">Inscribirme</button>
-            </div>
-        </div>
-        <div class="card d-flex flex-column justify-content-between">
-            <div class="card-talleres">
-                <img src="img/baldosas.jpg" class="card-img-top" alt="...">
-                <h4 class="">Yoga</h4>
-                <p><strong>Día:</strong> Miércoles</p>
-                <p><strong>Horario:</strong>19hs</p>
-                <p><strong>Tallerista:</strong>Fulana y mengano</p>
-            </div>
-            <div> <button class="btn btn-info align-items-center" style="background-color: rgb(220, 43, 20); 
-            color: white;">Inscribirme</button>
-            </div>
-        </div>
-        <div class="container">
-            <h3 style="text-align: center;">este puede ser un titulo</h3>
-            <p style="text-align: center;"><strong>
-                    Y ESTE TAMBIEN PUEDE SER UN TITULO</strong>
-            </p>
-        </div>
-
-        <div class="d-flex flex-wrap flex-row border border-5">
-
-            <div class="card d-flex flex-column justify-content-between">
-                <div>
-                    <img src="img/dibujos.jpg" class="card-img-top" alt="...">
-                    <h4 class="text-center">¡Comprar!</h4>
-                    <p>Todo lo que necesites esta aquí, en manos empoderadas esperando su dueñe!!</p>
-                </div>
-                <div> <button class="btn btn-info align-items-center" style="background-color: crimson; 
-            color: white;">Leer más...</button>
-                </div>
-            </div>
-
-            <div class="card d-flex flex-column justify-content-between">
-                <div class="text-center">
-                    <img src="img/dibujos.jpg" class="card-img-top" alt="...">
-                    <h4 class="text-center">YOGA</h4>
-
-                    <p> «La alegría no llueve sobre ti, florece desde el interior. Sea cual sea la situación, si eres
-                        dichoso, la vida es una celebración».
-                        -Sadhguru/p">
-                </div>
-                <div> <button class="btn btn-info align-items-center" style="background-color: rgb(198, 98, 103)">Leer
-                        más...</button>
-                </div>
-            </div>
-
-            <div class="card d-flex flex-column justify-content-between">
-                <div>
-                    <h4 class="text-center">YOGA</h4>
-                    <p>Todo lo que necesites en manos empoderadas, con garantía y de calidad</p>
-                </div>
-                <div> <button class="btn btn-info align-items-center" style="background-color: rgb(198, 98, 103)">Leer
-                        más...</button>
-                </div>
-                <img src="img/botella.jpg" class="card-img-top" alt="...">
-            </div>
-
-        </div>
-
-
-        <div class="card mb-3 card-talleres" style="max-width: 600px;">
-            <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="img/card.2.png" class="img-fluid rounded-start mt-2" alt="..." width="110%">
-                </div>
-                <div class="col-md-7 mt-2">
-                    <h4 class="">Yoga</h4>
-                    <p><strong>Día:</strong> Miércoles</p>
-                    <p><strong>Horario:</strong>19hs</p>
-                    <p><strong>Tallerista:</strong>Fulana y mengano</p>
-                </div>
-            </div>
-        </div>
-        <div class="card mb-3 card-talleres" style="max-width: 600px;">
-            <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="img/card.3.png" class="img-fluid rounded-start mt-2" alt="..." width="120%">
-                </div>
-                <div class="col-md-7 mt-2">
-                    <h4 class="">Yoga</h4>
-                    <p><strong>Día:</strong> Miércoles</p>
-                    <p><strong>Horario:</strong>19hs</p>
-                    <p><strong>Tallerista:</strong>Fulana y mengano</p>
-                </div>
-            </div>
-        </div>
+    <div class="text-center" style=" background-image: linear-gradient(to right,  rgb(174, 94, 101), rgb(246, 142, 99), rgb(174, 94, 101));
+    ">
+        <h1 id="in" class="text-center">TALLERES</h1>
     </div>
-    <footer class="p-3 mt-5" style=" background-image: linear-gradient(to right,  rgb(174, 94, 101), rgb(246, 142, 99), rgb(174, 94, 101));
+    <br>
+
+    <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
+    <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
+    <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
+    <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
+    <footer class="p-3 mt-5"style=" background-image: linear-gradient(to right,  rgb(174, 94, 101), rgb(246, 142, 99), rgb(174, 94, 101));
     ">
         <div class="row d-flex">
 
             <div class="col-sm-4 d-flex flex-column">
+                 
                 <p><a href="https://www.facebook.com/casaraizuy" target="_blank">Facebook</a></p>
                 <p><a href="https://www.instagram.com/casaraizuy" target="_blank">Instagram</a></p>
                 <p><a href="https://wa.me/59899303966" target="_blank">WhatsApp</a></p>
@@ -236,7 +94,7 @@
             </div>
 
             <div class="col-sm-4 d-flex flex-column align-items-center">
-                <a href="index.html" class="">
+                <a href="/" class="">
                     <img src="img/Raiz.logo.redondo (1).png" class="img-fluid"
                         style="display: block;margin-left: auto;margin-right: auto;" width="60%">
                 </a>
@@ -248,6 +106,7 @@
                 <p><a href="comunidadraiz.html">Comunidad Raiz</a></p>
                 <p><a href="talleres.html">Talleres</a></p>
                 <p><a href="agenda.html">Agenda</a></p>
+                <p><a href="tienda.html">Tienda</a></p>
                 <p><a href="blog.html">Blog</a></p>
             </div>
 
@@ -257,7 +116,6 @@
             <p class="small">© 2022 Casa Raiz</p>
         </div>
     </footer>
-
 </body>
 
 </html>
