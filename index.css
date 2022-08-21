@@ -52,6 +52,32 @@ footer a {
 
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-2 {
+    animation: App-logo infinite 10s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}@keyframes App-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 #cb {
   font-size: 1.5cm;
   border: 2px solid #d5dadf;
@@ -148,8 +174,8 @@ body {
 .tabla2 td {
   text-align: center;
   padding: .2em .5em;
-  color: rgb(129, 55, 55);
-  border: 1px solid rgb(201, 52, 52);
+  color: rgb(12, 0, 0);
+  border: 1px solid rgb(7, 7, 7);
 }
 
 .tabla2 caption {
