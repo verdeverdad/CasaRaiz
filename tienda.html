@@ -67,6 +67,747 @@
   <br>
 
  
+
+    <!-- mensajes de alerta -->
+    <script>
+      $(document).ready(function(){
+          $(".alerta").fadeOut(15000);
+      });
+  </script>
+  
+      <!-- contenido -->
+      
+  
+  <div class="my-2">
+      <h1 id="in" class="text-center pt-2">TIENDA</h1>
+  </div>
+  
+  
+  <div class="container">
+  
+      
+                  <div>
+              <a class="btn btn-outline-secondary my-3" href="https://casaraiz.uy/tienda/create">Crear Producto</a>
+          </div>
+              
+      
+      
+      
+      <div class="d-flex flex-wrap flex-row mb-3">
+      
+          <div class="col-md-4">
+        <div class="card mb-4">
+                  <a href="https://casaraiz.uy/tienda/taco-de-reina" class="">
+            <img src="img/card.2.png" class="card-img-top" alt="...">
+          </a>
+                  
+          <div class="card-body">
+          
+            <a href="https://casaraiz.uy/tienda/taco-de-reina" class="mt-2">
+              <h5 class="card-title text-dark">Taco de reina</h5>
+            </a>
+  
+                              
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="card-text">$50</p>
+              <small class="text-dark">15 unidades en stock.</small>
+            </div>
+            
+                                <small class="card-text">De la mano de Dr. Conrad Bergstrom Sr.</small>
+                      
+            <p class="card-text">Plantín chico de taco de reina</p>
+          
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://casaraiz.uy/tienda/taco-de-reina" class=""><small>más info...</small></a>
+                          
+              <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                data-toggle="modal" data-target="#lo-quiero-7" id="lo-quiero-btn-7">
+                Lo quiero
+              </button>
+  
+            </div>
+          </div>
+        </div>
+  
+  
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <div class="modal fade" id="lo-quiero-7" tabindex="-1" role="dialog" aria-labelledby="formulario_de_lo_quiero" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formulario_de_lo_quiero">Completa tus datos</h5>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form action="https://casaraiz.uy/lo_quiero" method="POST">
+                <div class="modal-body">
+                  <input type="hidden" name="_token" value="MxJAupe991AoJwLJ2euq7rwITd4LWZYKMT5rOP5D">								<input type="hidden" name="_method" value="POST">
+                  <div class="form-row">
+                    <!-- input oculto con la informacion $producto->id -->
+                    <input type="hidden" name="id_producto" value="7">
+  
+                    <div class="form-group col-sm-6">
+                      <label for="nombre">Nombre: </label>
+                      <input required type="text" class="form-control" id="nombre" name="nombre" value="" placeholder="Ingrese su nombre">
+                                        </div>
+  
+                    <div class="form-group col-sm-6">
+                      <label for="apellido">Apellido: </label>
+                      <input required type="text" class="form-control" id="apellido" name="apellido" value="" placeholder="Ingrese su Apellido">
+                                        </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="correo">Correo: </label>
+                    <input required type="email" class="form-control" id="correo" name="correo" value="" placeholder="Ingrese su correo">
+                                    </div>
+                  <div class="form row">
+                    <div class="form-group col-sm-6">
+                      <label for="documento">Documento: </label>
+                      <input required type="text" class="form-control" id="documento" name="documento" value="" placeholder="sin puntos ni guión">
+                    
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="telefono">Celular: </label>
+                      <input required type="tel" class="form-control" id="telefono" name="telefono" value="" placeholder="09xxxxxxxx">
+                                        </div>
+                  </div>
+                  
+  
+                  <div class="form-group">
+                    <label for="comentario">Medio de pago: </label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="efectivo-7" value="efectivo">
+                      <label class="form-check-label" for="efectivo-7">Efectivo</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="midinero-7" value="midinero">
+                      <label class="form-check-label" for="midinero-7">MiDinero</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="prex-7" value="prex">
+                      <label class="form-check-label" for="prex-7">Prex</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="canje/sorteo-7" value="canje/sorteo">
+                      <label class="form-check-label" for="canje/sorteo-7">Canje/Sorteo</label>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;" id="enviar">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--  ----------FIN DEL FORMULARIO DE LO QUIERO -------- ------ ----- -->
+  
+  
+      </div>
+          <div class="col-md-4">
+        <div class="card mb-4">
+                  <a href="https://casaraiz.uy/tienda/sue%C3%B1o-de-los-pasos-antiguos" class="">
+            <img src="/storage/productos/19kFShvfpZJxgNm9kKQ3YHJoDsXbCOfffphmEUd2.jpg" class="card-img-top" alt="...">
+          </a>
+                  
+          <div class="card-body">
+          
+            <a href="https://casaraiz.uy/tienda/sue%C3%B1o-de-los-pasos-antiguos" class="mt-2">
+              <h5 class="card-title text-dark">Sueño de los pasos antiguos</h5>
+            </a>
+  
+                              
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="card-text">$189</p>
+              <small class="text-dark">3 unidades en stock.</small>
+            </div>
+            
+                                <small class="card-text">De la mano de Christian Rogahn</small>
+                      
+            <p class="card-text">Mitos Colombianos
+  
+  Editorial Qhapaq Ñan</p>
+          
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://casaraiz.uy/tienda/sue%C3%B1o-de-los-pasos-antiguos" class=""><small>más info...</small></a>
+                          
+              <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                data-toggle="modal" data-target="#lo-quiero-4" id="lo-quiero-btn-4">
+                Lo quiero
+              </button>
+  
+            </div>
+          </div>
+        </div>
+  
+  
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <div class="modal fade" id="lo-quiero-4" tabindex="-1" role="dialog" aria-labelledby="formulario_de_lo_quiero" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formulario_de_lo_quiero">Completa tus datos</h5>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form action="https://casaraiz.uy/lo_quiero" method="POST">
+                <div class="modal-body">
+                  <input type="hidden" name="_token" value="MxJAupe991AoJwLJ2euq7rwITd4LWZYKMT5rOP5D">								<input type="hidden" name="_method" value="POST">
+                  <div class="form-row">
+                    <!-- input oculto con la informacion $producto->id -->
+                    <input type="hidden" name="id_producto" value="4">
+  
+                    <div class="form-group col-sm-6">
+                      <label for="nombre">Nombre: </label>
+                      <input required type="text" class="form-control" id="nombre" name="nombre" value="" placeholder="Ingrese su nombre">
+                                        </div>
+  
+                    <div class="form-group col-sm-6">
+                      <label for="apellido">Apellido: </label>
+                      <input required type="text" class="form-control" id="apellido" name="apellido" value="" placeholder="Ingrese su Apellido">
+                                        </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="correo">Correo: </label>
+                    <input required type="email" class="form-control" id="correo" name="correo" value="" placeholder="Ingrese su correo">
+                                    </div>
+                  <div class="form row">
+                    <div class="form-group col-sm-6">
+                      <label for="documento">Documento: </label>
+                      <input required type="text" class="form-control" id="documento" name="documento" value="" placeholder="sin puntos ni guión">
+                    
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="telefono">Celular: </label>
+                      <input required type="tel" class="form-control" id="telefono" name="telefono" value="" placeholder="09xxxxxxxx">
+                                        </div>
+                  </div>
+                  
+  
+                  <div class="form-group">
+                    <label for="comentario">Medio de pago: </label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="efectivo-4" value="efectivo">
+                      <label class="form-check-label" for="efectivo-4">Efectivo</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="midinero-4" value="midinero">
+                      <label class="form-check-label" for="midinero-4">MiDinero</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="prex-4" value="prex">
+                      <label class="form-check-label" for="prex-4">Prex</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="canje/sorteo-4" value="canje/sorteo">
+                      <label class="form-check-label" for="canje/sorteo-4">Canje/Sorteo</label>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;" id="enviar">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--  ----------FIN DEL FORMULARIO DE LO QUIERO -------- ------ ----- -->
+  
+  
+      </div>
+          <div class="col-md-4">
+        <div class="card mb-4">
+                  <a href="https://casaraiz.uy/tienda/remera-casa-ra%C3%ADz" class="">
+            <img src="/storage/productos/xxfICGGzCO7vVrpFTtNCpIWUR3mi4sk5qoHTYtys.png" class="card-img-top" alt="...">
+          </a>
+                  
+          <div class="card-body">
+          
+            <a href="https://casaraiz.uy/tienda/remera-casa-ra%C3%ADz" class="mt-2">
+              <h5 class="card-title text-dark">Remera Casa Raíz</h5>
+            </a>
+  
+                              
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="card-text">$700</p>
+              <small class="text-dark">2 unidades en stock.</small>
+            </div>
+            
+                                <small class="card-text">De la mano de controlador null</small>
+                      
+            <p class="card-text">Remera Casa Raíz con logo en frente y espalda.</p>
+          
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://casaraiz.uy/tienda/remera-casa-ra%C3%ADz" class=""><small>más info...</small></a>
+                          
+              <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                data-toggle="modal" data-target="#lo-quiero-16" id="lo-quiero-btn-16">
+                Lo quiero
+              </button>
+  
+            </div>
+          </div>
+        </div>
+  
+  
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <div class="modal fade" id="lo-quiero-16" tabindex="-1" role="dialog" aria-labelledby="formulario_de_lo_quiero" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formulario_de_lo_quiero">Completa tus datos</h5>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form action="https://casaraiz.uy/lo_quiero" method="POST">
+                <div class="modal-body">
+                  <input type="hidden" name="_token" value="MxJAupe991AoJwLJ2euq7rwITd4LWZYKMT5rOP5D">								<input type="hidden" name="_method" value="POST">
+                  <div class="form-row">
+                    <!-- input oculto con la informacion $producto->id -->
+                    <input type="hidden" name="id_producto" value="16">
+  
+                    <div class="form-group col-sm-6">
+                      <label for="nombre">Nombre: </label>
+                      <input required type="text" class="form-control" id="nombre" name="nombre" value="" placeholder="Ingrese su nombre">
+                                        </div>
+  
+                    <div class="form-group col-sm-6">
+                      <label for="apellido">Apellido: </label>
+                      <input required type="text" class="form-control" id="apellido" name="apellido" value="" placeholder="Ingrese su Apellido">
+                                        </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="correo">Correo: </label>
+                    <input required type="email" class="form-control" id="correo" name="correo" value="" placeholder="Ingrese su correo">
+                                    </div>
+                  <div class="form row">
+                    <div class="form-group col-sm-6">
+                      <label for="documento">Documento: </label>
+                      <input required type="text" class="form-control" id="documento" name="documento" value="" placeholder="sin puntos ni guión">
+                    
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="telefono">Celular: </label>
+                      <input required type="tel" class="form-control" id="telefono" name="telefono" value="" placeholder="09xxxxxxxx">
+                                        </div>
+                  </div>
+                  
+  
+                  <div class="form-group">
+                    <label for="comentario">Medio de pago: </label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="efectivo-16" value="efectivo">
+                      <label class="form-check-label" for="efectivo-16">Efectivo</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="midinero-16" value="midinero">
+                      <label class="form-check-label" for="midinero-16">MiDinero</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="prex-16" value="prex">
+                      <label class="form-check-label" for="prex-16">Prex</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="canje/sorteo-16" value="canje/sorteo">
+                      <label class="form-check-label" for="canje/sorteo-16">Canje/Sorteo</label>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;" id="enviar">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--  ----------FIN DEL FORMULARIO DE LO QUIERO -------- ------ ----- -->
+  
+  
+      </div>
+          <div class="col-md-4">
+        <div class="card mb-4">
+                  <a href="https://casaraiz.uy/tienda/cola-de-cabalo" class="">
+            <img src="/storage/productos/Je8lxh2q7OHq8gQqqvYBz2yu2EdshvqDkM271hcA.jpg" class="card-img-top" alt="...">
+          </a>
+                  
+          <div class="card-body">
+          
+            <a href="https://casaraiz.uy/tienda/cola-de-cabalo" class="mt-2">
+              <h5 class="card-title text-dark">Cola de cabalo</h5>
+            </a>
+  
+                              
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="card-text">$250</p>
+              <small class="text-dark">2 unidades en stock.</small>
+            </div>
+            
+                                <small class="card-text">De la mano de Evan Watsica</small>
+                      
+            <p class="card-text">Planta de cola de caballo, tamaño mediano/grande.</p>
+          
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://casaraiz.uy/tienda/cola-de-cabalo" class=""><small>más info...</small></a>
+                          
+              <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                data-toggle="modal" data-target="#lo-quiero-15" id="lo-quiero-btn-15">
+                Lo quiero
+              </button>
+  
+            </div>
+          </div>
+        </div>
+  
+  
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <div class="modal fade" id="lo-quiero-15" tabindex="-1" role="dialog" aria-labelledby="formulario_de_lo_quiero" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formulario_de_lo_quiero">Completa tus datos</h5>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form action="https://casaraiz.uy/lo_quiero" method="POST">
+                <div class="modal-body">
+                  <input type="hidden" name="_token" value="MxJAupe991AoJwLJ2euq7rwITd4LWZYKMT5rOP5D">								<input type="hidden" name="_method" value="POST">
+                  <div class="form-row">
+                    <!-- input oculto con la informacion $producto->id -->
+                    <input type="hidden" name="id_producto" value="15">
+  
+                    <div class="form-group col-sm-6">
+                      <label for="nombre">Nombre: </label>
+                      <input required type="text" class="form-control" id="nombre" name="nombre" value="" placeholder="Ingrese su nombre">
+                                        </div>
+  
+                    <div class="form-group col-sm-6">
+                      <label for="apellido">Apellido: </label>
+                      <input required type="text" class="form-control" id="apellido" name="apellido" value="" placeholder="Ingrese su Apellido">
+                                        </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="correo">Correo: </label>
+                    <input required type="email" class="form-control" id="correo" name="correo" value="" placeholder="Ingrese su correo">
+                                    </div>
+                  <div class="form row">
+                    <div class="form-group col-sm-6">
+                      <label for="documento">Documento: </label>
+                      <input required type="text" class="form-control" id="documento" name="documento" value="" placeholder="sin puntos ni guión">
+                    
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="telefono">Celular: </label>
+                      <input required type="tel" class="form-control" id="telefono" name="telefono" value="" placeholder="09xxxxxxxx">
+                                        </div>
+                  </div>
+                  
+  
+                  <div class="form-group">
+                    <label for="comentario">Medio de pago: </label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="efectivo-15" value="efectivo">
+                      <label class="form-check-label" for="efectivo-15">Efectivo</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="midinero-15" value="midinero">
+                      <label class="form-check-label" for="midinero-15">MiDinero</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="prex-15" value="prex">
+                      <label class="form-check-label" for="prex-15">Prex</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="canje/sorteo-15" value="canje/sorteo">
+                      <label class="form-check-label" for="canje/sorteo-15">Canje/Sorteo</label>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;" id="enviar">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--  ----------FIN DEL FORMULARIO DE LO QUIERO -------- ------ ----- -->
+  
+  
+      </div>
+          <div class="col-md-4">
+        <div class="card mb-4">
+                  <a href="https://casaraiz.uy/tienda/calendula" class="">
+            <img src="/storage/productos/NjKXeGofhyxMlhBG36qkLU1Qhmwf9byrSsh07oWy.jpg" class="card-img-top" alt="...">
+          </a>
+                  
+          <div class="card-body">
+          
+            <a href="https://casaraiz.uy/tienda/calendula" class="mt-2">
+              <h5 class="card-title text-dark">Caléndula</h5>
+            </a>
+  
+                              
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="card-text">$50</p>
+              <small class="text-dark">12 unidades en stock.</small>
+            </div>
+            
+                                <small class="card-text">De la mano de controlador null</small>
+                      
+            <p class="card-text">Un plantín de caléndula amarillo o naranja.</p>
+          
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://casaraiz.uy/tienda/calendula" class=""><small>más info...</small></a>
+                          
+              <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                data-toggle="modal" data-target="#lo-quiero-18" id="lo-quiero-btn-18">
+                Lo quiero
+              </button>
+  
+            </div>
+          </div>
+        </div>
+  
+  
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <div class="modal fade" id="lo-quiero-18" tabindex="-1" role="dialog" aria-labelledby="formulario_de_lo_quiero" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formulario_de_lo_quiero">Completa tus datos</h5>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form action="https://casaraiz.uy/lo_quiero" method="POST">
+                <div class="modal-body">
+                  <input type="hidden" name="_token" value="MxJAupe991AoJwLJ2euq7rwITd4LWZYKMT5rOP5D">								<input type="hidden" name="_method" value="POST">
+                  <div class="form-row">
+                    <!-- input oculto con la informacion $producto->id -->
+                    <input type="hidden" name="id_producto" value="18">
+  
+                    <div class="form-group col-sm-6">
+                      <label for="nombre">Nombre: </label>
+                      <input required type="text" class="form-control" id="nombre" name="nombre" value="" placeholder="Ingrese su nombre">
+                                        </div>
+  
+                    <div class="form-group col-sm-6">
+                      <label for="apellido">Apellido: </label>
+                      <input required type="text" class="form-control" id="apellido" name="apellido" value="" placeholder="Ingrese su Apellido">
+                                        </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="correo">Correo: </label>
+                    <input required type="email" class="form-control" id="correo" name="correo" value="" placeholder="Ingrese su correo">
+                                    </div>
+                  <div class="form row">
+                    <div class="form-group col-sm-6">
+                      <label for="documento">Documento: </label>
+                      <input required type="text" class="form-control" id="documento" name="documento" value="" placeholder="sin puntos ni guión">
+                    
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="telefono">Celular: </label>
+                      <input required type="tel" class="form-control" id="telefono" name="telefono" value="" placeholder="09xxxxxxxx">
+                                        </div>
+                  </div>
+                  
+  
+                  <div class="form-group">
+                    <label for="comentario">Medio de pago: </label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="efectivo-18" value="efectivo">
+                      <label class="form-check-label" for="efectivo-18">Efectivo</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="midinero-18" value="midinero">
+                      <label class="form-check-label" for="midinero-18">MiDinero</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="prex-18" value="prex">
+                      <label class="form-check-label" for="prex-18">Prex</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="canje/sorteo-18" value="canje/sorteo">
+                      <label class="form-check-label" for="canje/sorteo-18">Canje/Sorteo</label>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;" id="enviar">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--  ----------FIN DEL FORMULARIO DE LO QUIERO -------- ------ ----- -->
+  
+  
+      </div>
+          <div class="col-md-4">
+        <div class="card mb-4">
+                  <a href="https://casaraiz.uy/tienda/aguaymanto-/-uchuva" class="">
+            <img src="/storage/productos/z59vSTO4KJYqJmklUI2t7txZl7nsY1DlaAs2x4uL.jpg" class="card-img-top" alt="...">
+          </a>
+                  
+          <div class="card-body">
+          
+            <a href="https://casaraiz.uy/tienda/aguaymanto-/-uchuva" class="mt-2">
+              <h5 class="card-title text-dark">Aguaymanto / Uchuva</h5>
+            </a>
+  
+                              
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="card-text">$80</p>
+              <small class="text-dark">1 unidades en stock.</small>
+            </div>
+            
+                                <small class="card-text">De la mano de Mrs. Gilda Pagac</small>
+                      
+            <p class="card-text">Plantín de aguaymanto o uchuva.</p>
+          
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://casaraiz.uy/tienda/aguaymanto-/-uchuva" class=""><small>más info...</small></a>
+                          
+              <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                data-toggle="modal" data-target="#lo-quiero-14" id="lo-quiero-btn-14">
+                Lo quiero
+              </button>
+  
+            </div>
+          </div>
+        </div>
+  
+  
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE LO QUIERO -------- ------ ----- -->
+        <div class="modal fade" id="lo-quiero-14" tabindex="-1" role="dialog" aria-labelledby="formulario_de_lo_quiero" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formulario_de_lo_quiero">Completa tus datos</h5>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form action="https://casaraiz.uy/lo_quiero" method="POST">
+                <div class="modal-body">
+                  <input type="hidden" name="_token" value="MxJAupe991AoJwLJ2euq7rwITd4LWZYKMT5rOP5D">								<input type="hidden" name="_method" value="POST">
+                  <div class="form-row">
+                    <!-- input oculto con la informacion $producto->id -->
+                    <input type="hidden" name="id_producto" value="14">
+  
+                    <div class="form-group col-sm-6">
+                      <label for="nombre">Nombre: </label>
+                      <input required type="text" class="form-control" id="nombre" name="nombre" value="" placeholder="Ingrese su nombre">
+                                        </div>
+  
+                    <div class="form-group col-sm-6">
+                      <label for="apellido">Apellido: </label>
+                      <input required type="text" class="form-control" id="apellido" name="apellido" value="" placeholder="Ingrese su Apellido">
+                                        </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="correo">Correo: </label>
+                    <input required type="email" class="form-control" id="correo" name="correo" value="" placeholder="Ingrese su correo">
+                                    </div>
+                  <div class="form row">
+                    <div class="form-group col-sm-6">
+                      <label for="documento">Documento: </label>
+                      <input required type="text" class="form-control" id="documento" name="documento" value="" placeholder="sin puntos ni guión">
+                    
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="telefono">Celular: </label>
+                      <input required type="tel" class="form-control" id="telefono" name="telefono" value="" placeholder="09xxxxxxxx">
+                                        </div>
+                  </div>
+                  
+  
+                  <div class="form-group">
+                    <label for="comentario">Medio de pago: </label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="efectivo-14" value="efectivo">
+                      <label class="form-check-label" for="efectivo-14">Efectivo</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="midinero-14" value="midinero">
+                      <label class="form-check-label" for="midinero-14">MiDinero</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="prex-14" value="prex">
+                      <label class="form-check-label" for="prex-14">Prex</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="medio_de_pago"  id="canje/sorteo-14" value="canje/sorteo">
+                      <label class="form-check-label" for="canje/sorteo-14">Canje/Sorteo</label>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;" id="enviar">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--  ----------FIN DEL FORMULARIO DE LO QUIERO -------- ------ ----- -->
+  
+  
+      </div>
+      
+    </div>
+  
+  
+    <!-- Botones de paginacion -->
+    
+      
+  
+  </div>
   <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
   <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
   <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
