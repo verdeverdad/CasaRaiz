@@ -149,7 +149,7 @@ footer a {
 }
 
 .ind {
-  background-image: linear-gradient(to bottom right, rgb(48, 66, 60), rgb(198, 98, 103), rgb(198, 98, 103));
+  background-image: linear-gradient(to bottom right, rgb(241, 245, 244), rgb(198, 98, 103), rgb(198, 98, 103));
 
 }
 
@@ -314,7 +314,12 @@ body {
 }
 
 
+.div1 h4, .div2 h4, .div3 h4 {
+  
+  border-bottom: 0.8px solid rgb(220, 43, 20);
+  
 
+}
 .div1 {
   background: url(img/semilla.png);
   background-position: right bottom, left top;
@@ -335,4 +340,19 @@ body {
   background-size: 100px 80px;
   background-repeat: no-repeat;
   opacity: 70%;
+}
+.talleres img {
+  max-width: 600px;
+   max-height: 400px;
+}
+.talleres p, span {
+  color:#4b0505;
+  font-size: 0.7cm;
+}
+
+.talleres h5 {
+  color:#630d0d;
+}
+.talleres small {
+  color:#833232;
 }

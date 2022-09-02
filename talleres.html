@@ -76,16 +76,616 @@
     </div>
     <br>
 
+    <div class="d-flex flex-wrap flex-row talleres">
+
+        <div class="col-md-6 col-sm-12 col-lg-4 ">
+            <div class="card mb-4">
+
+                <a href="https://casaraiz.uy/eventos/meditaci%C3%B3n-guiada" class="">
+                    <img src="img/piano.jpg" class="card-img-top"
+                        alt="...">
+                </a>
+
+                <div class="card-body">
+
+                    <p class="card-text">Viernes de 17:00 a 19:00hs.</p>
+                    <a href="https://casaraiz.uy/eventos/meditaci%C3%B3n-guiada" class="mt-2">
+                        <h5 class="card-title">Meditación guiada</h5>
+                    </a>
+                    <small class="card-text">A cargo de Rafael Burgueño</small>
+
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="card-text"><small>Inscripción</small> <span class="h4">$500</span></div>
+                        <small class="">15 cupos</small>
+                    </div>
+
+                    <p class="card-text">Texto de descripción del taller</p>
+
+
+
+                </div>
+                <div class="p-2 d-flex justify-content-end">
+                    <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                        data-toggle="modal" data-target="#inscribirme-23" id="contactobtn-23">
+                        Inscribirme
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <div class="modal fade" id="inscribirme-23" tabindex="-1" role="dialog"
+            aria-labelledby="formulario_de_inscripcion" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="formulario_de_inscripcion">Completa tus datos</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="https://casaraiz.uy/inscripcion" method="POST">
+                        <div class="modal-body">
+
+
+                            <input type="hidden" name="_token" value="UY1QyWGn0RhN555r78T8lW47KHZSRkneT8oH2uU7"> <input
+                                type="hidden" name="_method" value="POST">
+                            <div class="form-row">
+                                <!-- input oculto con la informacion $t->id -->
+                                <input type="hidden" name="id_evento" value="23">
+
+                                <div class="form-group col-sm-6">
+                                    <label for="nombre">Nombre: </label>
+                                    <input required type="text" class="form-control" id="nombre" name="nombre" value=""
+                                        placeholder="Ingrese su nombre">
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <label for="apellido">Apellido: </label>
+                                    <input required type="text" class="form-control" id="apellido" name="apellido"
+                                        value="" placeholder="Ingrese su Apellido">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label for="correo">Correo: </label>
+                                <input required type="email" class="form-control" id="correo" name="correo" value=""
+                                    placeholder="Ingrese su correo">
+                            </div>
+                            <div class="form row">
+                                <div class="form-group col-sm-6">
+                                    <label for="documento">Documento: </label>
+                                    <input required type="text" class="form-control" id="documento" name="documento"
+                                        value="" placeholder="sin puntos ni guión">
+
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="telefono">Celular: </label>
+                                    <input required type="tel" class="form-control" id="telefono" name="telefono"
+                                        value="" placeholder="09xxxxxxxx">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="">Medio de pago: </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="efectivo-23"
+                                        value="efectivo">
+                                    <label class="form-check-label" for="efectivo-23">Efectivo</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="midinero-23"
+                                        value="midinero">
+                                    <label class="form-check-label" for="midinero-23">MiDinero</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="prex-23"
+                                        value="prex">
+                                    <label class="form-check-label" for="prex-23">Prex</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago"
+                                        id="canje/sorteo-23" value="canje/sorteo">
+                                    <label class="form-check-label" for="canje/sorteo-23">Canje/Sorteo</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;"
+                                id="enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--  ----------FIN DEL FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+
+        <div class="col-md-6 col-sm-12 col-lg-4 ">
+            <div class="card mb-4">
+
+                <a href="https://casaraiz.uy/eventos/serigraf%C3%ADa" class="">
+                    <img src="img/card.5.png" class="card-img-top" 
+                        alt="...">
+                </a>
+
+                <div class="card-body">
+
+                    <p class="card-text">Lunes de 19:30 a 21:15hs.</p>
+                    <a href="https://casaraiz.uy/eventos/serigraf%C3%ADa" class="mt-2">
+                        <h5 class="card-title">Serigrafía</h5>
+                    </a>
+                    <small class="card-text">A cargo de Misma Creaciones</small>
+
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="card-text"><small>Inscripción</small> <span class="h4">$650</span></div>
+                        <small class="">10 cupos</small>
+                    </div>
+
+                    <p class="card-text">Taller de serigrafía</p>
+
+
+
+                </div>
+                <div class="p-2 d-flex justify-content-end">
+                    <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                        data-toggle="modal" data-target="#inscribirme-25" id="contactobtn-25">
+                        Inscribirme
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <div class="modal fade" id="inscribirme-25" tabindex="-1" role="dialog"
+            aria-labelledby="formulario_de_inscripcion" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="formulario_de_inscripcion">Completa tus datos</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="https://casaraiz.uy/inscripcion" method="POST">
+                        <div class="modal-body">
+
+
+                            <input type="hidden" name="_token" value="UY1QyWGn0RhN555r78T8lW47KHZSRkneT8oH2uU7"> <input
+                                type="hidden" name="_method" value="POST">
+                            <div class="form-row">
+                                <!-- input oculto con la informacion $t->id -->
+                                <input type="hidden" name="id_evento" value="25">
+
+                                <div class="form-group col-sm-6">
+                                    <label for="nombre">Nombre: </label>
+                                    <input required type="text" class="form-control" id="nombre" name="nombre" value=""
+                                        placeholder="Ingrese su nombre">
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <label for="apellido">Apellido: </label>
+                                    <input required type="text" class="form-control" id="apellido" name="apellido"
+                                        value="" placeholder="Ingrese su Apellido">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label for="correo">Correo: </label>
+                                <input required type="email" class="form-control" id="correo" name="correo" value=""
+                                    placeholder="Ingrese su correo">
+                            </div>
+                            <div class="form row">
+                                <div class="form-group col-sm-6">
+                                    <label for="documento">Documento: </label>
+                                    <input required type="text" class="form-control" id="documento" name="documento"
+                                        value="" placeholder="sin puntos ni guión">
+
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="telefono">Celular: </label>
+                                    <input required type="tel" class="form-control" id="telefono" name="telefono"
+                                        value="" placeholder="09xxxxxxxx">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="">Medio de pago: </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="efectivo-25"
+                                        value="efectivo">
+                                    <label class="form-check-label" for="efectivo-25">Efectivo</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="midinero-25"
+                                        value="midinero">
+                                    <label class="form-check-label" for="midinero-25">MiDinero</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="prex-25"
+                                        value="prex">
+                                    <label class="form-check-label" for="prex-25">Prex</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago"
+                                        id="canje/sorteo-25" value="canje/sorteo">
+                                    <label class="form-check-label" for="canje/sorteo-25">Canje/Sorteo</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;"
+                                id="enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--  ----------FIN DEL FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+
+        <div class="col-md-6 col-sm-12 col-lg-4 ">
+            <div class="card mb-4">
+
+                <a href="https://casaraiz.uy/eventos/yoga" class="">
+                    <img src="img/botella.jpg" class="card-img-top" style="max-width: 500px; max-height: 500px;"
+                        alt="..." >
+                </a>
+
+                <div class="card-body">
+
+                    <p class="card-text">Viernes de 16:00 a 18:00hs.</p>
+                    <a href="https://casaraiz.uy/eventos/yoga" class="mt-2">
+                        <h5 class="card-title">Yoga</h5>
+                    </a>
+                    <small class="card-text">A cargo de María Pelayo</small>
+
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="card-text"><small>Inscripción</small> <span class="h4">$650</span></div>
+                        <small class="">40 cupos</small>
+                    </div>
+
+                    <p class="card-text">Práctica de yoga</p>
+
+
+
+                </div>
+                <div class="p-2 d-flex justify-content-end">
+                    <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                        data-toggle="modal" data-target="#inscribirme-21" id="contactobtn-21">
+                        Inscribirme
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <div class="modal fade" id="inscribirme-21" tabindex="-1" role="dialog"
+            aria-labelledby="formulario_de_inscripcion" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="formulario_de_inscripcion">Completa tus datos</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="https://casaraiz.uy/inscripcion" method="POST">
+                        <div class="modal-body">
+
+
+                            <input type="hidden" name="_token" value="UY1QyWGn0RhN555r78T8lW47KHZSRkneT8oH2uU7"> <input
+                                type="hidden" name="_method" value="POST">
+                            <div class="form-row">
+                                <!-- input oculto con la informacion $t->id -->
+                                <input type="hidden" name="id_evento" value="21">
+
+                                <div class="form-group col-sm-6">
+                                    <label for="nombre">Nombre: </label>
+                                    <input required type="text" class="form-control" id="nombre" name="nombre" value=""
+                                        placeholder="Ingrese su nombre">
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <label for="apellido">Apellido: </label>
+                                    <input required type="text" class="form-control" id="apellido" name="apellido"
+                                        value="" placeholder="Ingrese su Apellido">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label for="correo">Correo: </label>
+                                <input required type="email" class="form-control" id="correo" name="correo" value=""
+                                    placeholder="Ingrese su correo">
+                            </div>
+                            <div class="form row">
+                                <div class="form-group col-sm-6">
+                                    <label for="documento">Documento: </label>
+                                    <input required type="text" class="form-control" id="documento" name="documento"
+                                        value="" placeholder="sin puntos ni guión">
+
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="telefono">Celular: </label>
+                                    <input required type="tel" class="form-control" id="telefono" name="telefono"
+                                        value="" placeholder="09xxxxxxxx">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="">Medio de pago: </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="efectivo-21"
+                                        value="efectivo">
+                                    <label class="form-check-label" for="efectivo-21">Efectivo</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="midinero-21"
+                                        value="midinero">
+                                    <label class="form-check-label" for="midinero-21">MiDinero</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="prex-21"
+                                        value="prex">
+                                    <label class="form-check-label" for="prex-21">Prex</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago"
+                                        id="canje/sorteo-21" value="canje/sorteo">
+                                    <label class="form-check-label" for="canje/sorteo-21">Canje/Sorteo</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;"
+                                id="enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--  ----------FIN DEL FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-">
+            <div class="card mb-4">
+
+                <a href="https://casaraiz.uy/eventos/danza-y-armonizacion" class="">
+                    <img src="img/card.2.png" class="card-img-top"
+                        alt="...">
+                </a>
+
+                <div class="card-body">
+
+                    <p class="card-text">Viernes de 18:30 a 20:00hs.</p>
+                    <a href="https://casaraiz.uy/eventos/danza-y-armonizacion" class="mt-2">
+                        <h5 class="card-title">Danza y armonización</h5>
+                    </a>
+                    <small class="card-text">A cargo de Romina Pinello</small>
+
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="card-text"><small>Inscripción</small> <span class="h4">$830</span></div>
+                        <small class="">7 cupos</small>
+                    </div>
+
+                    <p class="card-text">Mover los cuerpos físico, mental y espiritual.</p>
+
+
+
+                </div>
+                <div class="p-2 d-flex justify-content-end">
+                    <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                        data-toggle="modal" data-target="#inscribirme-29" id="contactobtn-29">
+                        Inscribirme
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-">
+            <div class="card mb-4">
+
+                <a href="https://casaraiz.uy/eventos/danza-y-armonizacion" class="">
+                    <img src="img/arbol.png" class="card-img-top"
+                        alt="...">
+                </a>
+
+                <div class="card-body">
+
+                    <p class="card-text">Viernes de 18:30 a 20:00hs.</p>
+                    <a href="https://casaraiz.uy/eventos/danza-y-armonizacion" class="mt-2">
+                        <h5 class="card-title">Danza y armonización</h5>
+                    </a>
+                    <small class="card-text">A cargo de Romina Pinello</small>
+
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="card-text"><small>Inscripción</small> <span class="h4">$830</span></div>
+                        <small class="">7 cupos</small>
+                    </div>
+
+                    <p class="card-text">Mover los cuerpos físico, mental y espiritual.</p>
+
+
+
+                </div>
+                <div class="p-2 d-flex justify-content-end">
+                    <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                        data-toggle="modal" data-target="#inscribirme-29" id="contactobtn-29">
+                        Inscribirme
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-">
+            <div class="card mb-4">
+
+                <a href="https://casaraiz.uy/eventos/danza-y-armonizacion" class="">
+                    <img src="img/logo.png" class="card-img-top"
+                        alt="...">
+                </a>
+
+                <div class="card-body">
+
+                    <p class="card-text">Viernes de 18:30 a 20:00hs.</p>
+                    <a href="https://casaraiz.uy/eventos/danza-y-armonizacion" class="mt-2">
+                        <h5 class="card-title">Danza y armonización</h5>
+                    </a>
+                    <small class="card-text">A cargo de Romina Pinello</small>
+
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="card-text"><small>Inscripción</small> <span class="h4">$830</span></div>
+                        <small class="">7 cupos</small>
+                    </div>
+
+                    <p class="card-text">Mover los cuerpos físico, mental y espiritual.</p>
+
+
+
+                </div>
+                <div class="p-2 d-flex justify-content-end">
+                    <button class="btn btn-info" style="background-color: rgb(220, 43, 20); color: white;"
+                        data-toggle="modal" data-target="#inscribirme-29" id="contactobtn-29">
+                        Inscribirme
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <!--  ----------FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+        <div class="modal fade" id="inscribirme-29" tabindex="-1" role="dialog"
+            aria-labelledby="formulario_de_inscripcion" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="formulario_de_inscripcion">Completa tus datos</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="https://casaraiz.uy/inscripcion" method="POST">
+                        <div class="modal-body">
+
+
+                            <input type="hidden" name="_token" value="UY1QyWGn0RhN555r78T8lW47KHZSRkneT8oH2uU7"> <input
+                                type="hidden" name="_method" value="POST">
+                            <div class="form-row">
+                                <!-- input oculto con la informacion $t->id -->
+                                <input type="hidden" name="id_evento" value="29">
+
+                                <div class="form-group col-sm-6">
+                                    <label for="nombre">Nombre: </label>
+                                    <input required type="text" class="form-control" id="nombre" name="nombre" value=""
+                                        placeholder="Ingrese su nombre">
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <label for="apellido">Apellido: </label>
+                                    <input required type="text" class="form-control" id="apellido" name="apellido"
+                                        value="" placeholder="Ingrese su Apellido">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label for="correo">Correo: </label>
+                                <input required type="email" class="form-control" id="correo" name="correo" value=""
+                                    placeholder="Ingrese su correo">
+                            </div>
+                            <div class="form row">
+                                <div class="form-group col-sm-6">
+                                    <label for="documento">Documento: </label>
+                                    <input required type="text" class="form-control" id="documento" name="documento"
+                                        value="" placeholder="sin puntos ni guión">
+
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="telefono">Celular: </label>
+                                    <input required type="tel" class="form-control" id="telefono" name="telefono"
+                                        value="" placeholder="09xxxxxxxx">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="">Medio de pago: </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="efectivo-29"
+                                        value="efectivo">
+                                    <label class="form-check-label" for="efectivo-29">Efectivo</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="midinero-29"
+                                        value="midinero">
+                                    <label class="form-check-label" for="midinero-29">MiDinero</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago" id="prex-29"
+                                        value="prex">
+                                    <label class="form-check-label" for="prex-29">Prex</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="medio_de_pago"
+                                        id="canje/sorteo-29" value="canje/sorteo">
+                                    <label class="form-check-label" for="canje/sorteo-29">Canje/Sorteo</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;"
+                                id="enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--  ----------FIN DEL FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+
+
+
+
+    </div>
     <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
     <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
     <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
     <!-- ---- ---- --- FOOTER  ---- FOOTER----- FOOTER---- FOOTER-->
-    <footer class="p-3 mt-5"style=" background-image: linear-gradient(to right,  rgb(174, 94, 101), rgb(246, 142, 99), rgb(174, 94, 101));
+    <footer class="p-3 mt-5" style=" background-image: linear-gradient(to right,  rgb(174, 94, 101), rgb(246, 142, 99), rgb(174, 94, 101));
     ">
         <div class="row d-flex">
 
             <div class="col-sm-4 d-flex flex-column">
-                 
+
                 <p><a href="https://www.facebook.com/casaraizuy" target="_blank">Facebook</a></p>
                 <p><a href="https://www.instagram.com/casaraizuy" target="_blank">Instagram</a></p>
                 <p><a href="https://wa.me/59899303966" target="_blank">WhatsApp</a></p>
