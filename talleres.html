@@ -72,7 +72,8 @@
 
     <div class="text-center" style=" background-image: linear-gradient(to right,  rgb(174, 94, 101), rgb(246, 142, 99), rgb(174, 94, 101));
     ">
-        <h1 id="in" class="text-center">TALLERES</h1>
+        <h1 id="in" class="text-center" style=" background-image: linear-gradient(to right, rgb(174, 94, 101), rgb(246, 142, 99),rgb(246, 142, 99), rgb(174, 94, 101))
+        ;">TALLERES</h1>
     </div>
     <br>
 
@@ -81,7 +82,7 @@
         <div class="col-md-6 col-sm-12 col-lg-4 ">
             <div class="card mb-4">
 
-                <a href="https://casaraiz.uy/eventos/meditaci%C3%B3n-guiada" class="">
+                <a href="index.html" class="">
                     <img src="img/piano.jpg" class="card-img-top"
                         alt="...">
                 </a>
@@ -143,31 +144,31 @@
                                 <div class="form-group col-sm-6">
                                     <label for="nombre">Nombre: </label>
                                     <input required type="text" class="form-control" id="nombre" name="nombre" value=""
-                                        placeholder="Ingrese su nombre">
+                                        placeholder="Ingrese su nombre" pattern="[A-Za-z]" required>
                                 </div>
 
                                 <div class="form-group col-sm-6">
                                     <label for="apellido">Apellido: </label>
                                     <input required type="text" class="form-control" id="apellido" name="apellido"
-                                        value="" placeholder="Ingrese su Apellido">
+                                        value="" placeholder="Ingrese su Apellido" required>
                                 </div>
                             </div>
                             <div class="form-group ">
                                 <label for="correo">Correo: </label>
                                 <input required type="email" class="form-control" id="correo" name="correo" value=""
-                                    placeholder="Ingrese su correo">
+                                    placeholder="Ingrese su correo" required>
                             </div>
                             <div class="form row">
                                 <div class="form-group col-sm-6">
                                     <label for="documento">Documento: </label>
                                     <input required type="text" class="form-control" id="documento" name="documento"
-                                        value="" placeholder="sin puntos ni guión">
+                                        value="" placeholder="sin puntos ni guión" required>
 
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="telefono">Celular: </label>
                                     <input required type="tel" class="form-control" id="telefono" name="telefono"
-                                        value="" placeholder="09xxxxxxxx">
+                                        value="" placeholder="09xxxxxxxx" required pattern="[0-9]{9}" >
                                 </div>
                             </div>
 
@@ -199,7 +200,7 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-block" style="background-color: coral; color: #e9e2e2;"
+                            <button type="submit" class="btn btn-block" onclick="click_al_register()" style="background-color: coral; color: #e9e2e2;"
                                 id="enviar">Enviar</button>
                         </div>
                     </form>
@@ -207,6 +208,33 @@
             </div>
         </div>
         <!--  ----------FIN DEL FORMULARIO DE INSCRIPCIÓN -------- ------ ----- -->
+
+
+        <script>
+
+            function click_al_register() {
+        
+              event.preventDefault();
+              var nombre = document.getElementById("nombre").value;
+              var apellido = document.getElementById("apellido").value;
+              var correo = document.getElementById("correo").value;
+            
+              var documento = document.getElementById("documento").value;
+              var telefono = document.getElementById("telefono").value;
+            
+             
+              if (nombre != "" && apellido != "" && correo != "" && documento != "" && contraseña != "" && telefono != "" && edad != "" && nContacto != "") {
+                console.log(nombre)
+                
+        
+                window.location.href = 'inicio.html';
+              } 
+            }
+        
+           //guarda el nombre cuando inicia en el modal ya estoy registrado
+          
+          </script>
+
 
         <div class="col-md-6 col-sm-12 col-lg-4 ">
             <div class="card mb-4">
