@@ -7,7 +7,7 @@
     // Create the defaults once
     var pluginName = "simpleCalendar",
       defaults = {
-        months: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'augosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'], //string of months starting from january
+        months: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'], //string of months starting from january
         days: ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'],
         //months: ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'], //string of months starting from january
         //days: ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'], //string of days starting from sunday
