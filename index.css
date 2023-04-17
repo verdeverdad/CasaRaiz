@@ -306,15 +306,15 @@ body {
 /*MEMBRESIAS MEMBRESIAS CARD DIV! DIV" DIV#*/
 /*MEMBRESIAS MEMBRESIAS CARD DIV! DIV" DIV#*/
 
-.div1 h5, .div2 h5, .div3 h5 {
+.div1 h5, .div2 h5, .div3 h5, .div4 h5{
   color:rgb(220, 43, 20)
 }
-.div1 button, .div2 button, .div3 button {
+.div1 button, .div2 button, .div3 button, .div4 button{
   background-color:rgb(220, 43, 20);
 }
 
 
-.div1 h4, .div2 h4, .div3 h4 {
+.div1 h4, .div2 h4, .div3 h4, .div4 h4 {
   
   border-bottom: 0.8px solid rgb(220, 43, 20);
   
@@ -338,6 +338,13 @@ body {
   background: url(img/arbol.png);
   background-position: right bottom, left top;
   background-size: 100px 80px;
+  background-repeat: no-repeat;
+  opacity: 70%;
+}
+.div4{
+  background: url(img/agua.png);
+  background-position: right bottom, left top;
+  background-size: 150px 120px;
   background-repeat: no-repeat;
   opacity: 70%;
 }
