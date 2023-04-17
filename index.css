@@ -344,7 +344,7 @@ body {
 .div4{
   background: url(img/agua.png);
   background-position: right bottom, left top;
-  background-size: 100px 80px;
+  background-size: 130px 105px;
   background-repeat: no-repeat;
   opacity: 70%;
 }
